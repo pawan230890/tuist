@@ -7,6 +7,8 @@ Feature: Generate a new project using Tuist
     Then tuist generates the project
     Then I should be able to build the scheme App
     Then I should be able to test the scheme AppTests
+    Then I should be able to build the scheme App-Project
+    Then I should be able to test the scheme App-Project
 
 
   Scenario: The project is an iOS application with frameworks and tests (ios_app_with_frameworks)
@@ -20,6 +22,8 @@ Feature: Generate a new project using Tuist
     Then I should be able to test the scheme Framework1Tests
     Then I should be able to build the scheme Framework2
     Then I should be able to test the scheme Framework2Tests
+    Then I should be able to test the scheme MainApp-Project
+    Then I should be able to build the scheme MainApp-Project
 
 
   Scenario: The project is a directory without valid manifest file (invalid_workspace_manifest_name)
